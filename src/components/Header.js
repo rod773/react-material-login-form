@@ -26,7 +26,7 @@ const Header = () => {
   };
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" color="secondary">
         <Toolbar>
           <IconButton
             size="large"

@@ -6,6 +6,9 @@ import {
   Typography,
   Box,
   Button,
+  Menu,
+  MenuList,
+  MenuItem,
 } from "@mui/material";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -72,9 +75,30 @@ const Header = () => {
               },
             }}
           >
-            <IconButton size="large" edge="start" color="inherit">
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              onClick={openMenu}
+            >
               <MenuIcon />
             </IconButton>
+            <Menu
+              open={anchorNav}
+              onClose={closeMenu}
+              sx={{
+                display: {
+                  xs: "flex",
+                  md: "none",
+                },
+              }}
+            >
+              <MenuList>
+                <MenuItem>SignIn</MenuItem>
+                <MenuItem>SignIn-Shadow</MenuItem>
+                <MenuItem>SignIn-Image</MenuItem>
+              </MenuList>
+            </Menu>
           </Box>
           <IconButton
             size="large"

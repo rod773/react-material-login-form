@@ -1,10 +1,11 @@
 import React from "react";
-import SignIn from "./SignIn";
+
+import Routes from "./components/Routes";
 
 function App() {
   return (
     <>
-      <SignIn />
+      <Routes />
     </>
   );
 }

@@ -11,7 +11,15 @@ import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
-  const [anchorNav, setAnchorNav] = useState();
+  const [anchorNav, setAnchorNav] = useState(null);
+
+  const openMenu = (e) => {
+    setAnchorNav(e.target);
+  };
+
+  const closeMenu = () => {
+    setAnchorNav(null);
+  };
   return (
     <>
       <AppBar position="static">

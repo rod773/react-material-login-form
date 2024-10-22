@@ -61,6 +61,7 @@ export default function SignInShadow() {
             label="Remember me"
           />
           <Button
+            color="secondary"
             type="submit"
             fullWidth
             variant="contained"

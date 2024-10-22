@@ -97,6 +97,7 @@ export default function SignInSide() {
                   label="Remember me"
                 />
                 <Button
+                  color="secondary"
                   type="submit"
                   fullWidth
                   variant="contained"

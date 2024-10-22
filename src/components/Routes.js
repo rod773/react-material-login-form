@@ -36,7 +36,7 @@ const Routes = () => {
     },
   ];
 
-  const router = createBrowserRouter([...routesForPublic, ,]);
+  const router = createBrowserRouter([...routesForPublic]);
 
   // Provide the router configuration using RouterProvider
   return <RouterProvider router={router} />;

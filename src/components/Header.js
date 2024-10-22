@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   IconButton,
@@ -63,9 +64,15 @@ const Header = () => {
               },
             }}
           >
-            <Button color="inherit">SignIn</Button>
-            <Button color="inherit">SignIn-Shadow</Button>
-            <Button color="inherit">SignIn-Image</Button>
+            <Button component={Link} to={"/"} color="inherit">
+              SignIn
+            </Button>
+            <Button component={Link} to={"/signinshadow"} color="inherit">
+              SignIn-Shadow
+            </Button>
+            <Button component={Link} to={"/signinslide"} color="inherit">
+              SignIn-Slide
+            </Button>
           </Box>
           <Box
             sx={{
@@ -96,7 +103,7 @@ const Header = () => {
               <MenuList>
                 <MenuItem>SignIn</MenuItem>
                 <MenuItem>SignIn-Shadow</MenuItem>
-                <MenuItem>SignIn-Image</MenuItem>
+                <MenuItem>SignIn-Slide</MenuItem>
               </MenuList>
             </Menu>
           </Box>

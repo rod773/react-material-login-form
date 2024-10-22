@@ -8,6 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
   return (
@@ -19,6 +20,12 @@ const Header = () => {
             edge="start"
             color="inherit"
             aria-label="logo"
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex",
+              },
+            }}
           >
             <LocalLibraryIcon />
           </IconButton>
@@ -26,15 +33,68 @@ const Header = () => {
             variant="h6"
             component="div"
             Typography
-            sx={{ flexGrow: 1 }}
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+              },
+            }}
           >
             MUI LOGIN
           </Typography>
-          <Box>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex",
+              },
+            }}
+          >
             <Button color="inherit">SignIn</Button>
             <Button color="inherit">SignIn-Shadow</Button>
             <Button color="inherit">SignIn-Image</Button>
           </Box>
+          <Box
+            sx={{
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+            }}
+          >
+            <IconButton size="large" edge="start" color="inherit">
+              <MenuIcon />
+            </IconButton>
+          </Box>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="logo"
+            sx={{
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+            }}
+          >
+            <LocalLibraryIcon />
+          </IconButton>
+          <Typography
+            variant="h6"
+            component="div"
+            Typography
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+            }}
+          >
+            MUI LOGIN
+          </Typography>
         </Toolbar>
       </AppBar>
     </>

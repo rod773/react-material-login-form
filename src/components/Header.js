@@ -91,9 +91,11 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Menu
+              position="absolute"
               open={anchorNav}
               onClose={closeMenu}
               sx={{
+                height: "100%",
                 display: {
                   xs: "flex",
                   md: "none",
@@ -101,9 +103,15 @@ const Header = () => {
               }}
             >
               <MenuList>
-                <MenuItem>SignIn</MenuItem>
-                <MenuItem>SignIn-Shadow</MenuItem>
-                <MenuItem>SignIn-Slide</MenuItem>
+                <MenuItem component={Link} to={"/"}>
+                  SignIn
+                </MenuItem>
+                <MenuItem component={Link} to={"/signinshadow"}>
+                  SignIn-Shadow
+                </MenuItem>
+                <MenuItem component={Link} to={"/sighinslide"}>
+                  SignIn-Slide
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

@@ -26,7 +26,7 @@ const Header = () => {
   };
   return (
     <>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" sx={{ bgcolor: "secondary.light" }}>
         <Toolbar>
           <IconButton
             size="large"

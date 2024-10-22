@@ -61,11 +61,10 @@ export default function SignInShadow() {
             label="Remember me"
           />
           <Button
-            color="secondary"
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 }}
+            sx={{ mt: 3, mb: 2, bgcolor: "secondary.light" }}
           >
             Sign In
           </Button>

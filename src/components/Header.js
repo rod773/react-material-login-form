@@ -73,6 +73,9 @@ const Header = () => {
             <Button component={Link} to={"/signinslide"} color="inherit">
               SignIn-Slide
             </Button>
+            <Button component={Link} to={"/sidenav"} color="inherit">
+              Sidenav
+            </Button>
           </Box>
           <Box
             sx={{

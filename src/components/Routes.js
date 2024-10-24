@@ -7,6 +7,7 @@ import SignIn from "../SignIn";
 import SignInShadow from "../SignInShadow";
 import SignInSide from "../SignInSide";
 import Layout from "./Layout";
+import Sidenav from "./Sidenav";
 
 const Routes = () => {
   const routesForPublic = [
@@ -26,6 +27,25 @@ const Routes = () => {
         {
           path: "/signinslide",
           element: <SignInSide />,
+        },
+
+        {
+          path: "/sidenav",
+          element: <Sidenav />,
+          children: [
+            {
+              path: "/sidenav",
+              element: <SignIn />,
+            },
+            {
+              path: "/sidenav/signinshadow",
+              element: <SignInShadow />,
+            },
+            {
+              path: "/sidenav/signinslide",
+              element: <SignInSide />,
+            },
+          ],
         },
 
         {

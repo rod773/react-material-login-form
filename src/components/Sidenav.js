@@ -117,7 +117,7 @@ export default function Sidenav() {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
-        <Toolbar>
+        <Toolbar sx={{ bgcolor: "secondary.light" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -144,7 +144,7 @@ export default function Sidenav() {
               // },
             }}
           >
-            Mini variant drawer
+            MINI DRAWER
           </Typography>
           <Box
             sx={{
